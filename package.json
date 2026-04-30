@@ -1,0 +1,14 @@
+{
+  "name": "keyword-content-analysis-suite",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:web": "cd apps/web && next dev",
+    "dev:api": "cd apps/api && uvicorn app.main:app --reload",
+    "lint": "echo 'Configure linting in CI'",
+    "typecheck": "echo 'Configure typecheck in CI'"
+  }
+}
